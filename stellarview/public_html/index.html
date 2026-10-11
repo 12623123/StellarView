@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="bg">
+
+<head>
+    <title>Steller View</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imgs/galaxy.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+
+    <div class="background">
+        <nav>
+            <!-- Лого и навигационни връзки -->
+            <div class="logo"><a href="index.html"><img src="imgs/steller (2).png" alt="" /></a></div>
+            <ul>
+                <li><a href="index.html">начало</a></li>
+                <li><a href="explore.html">изследване</a></li>
+                <li><a href="about.html">за нас</a></li>
+            </ul>
+            <!-- Мобилно меню -->
+            <ul class="menu" hidden>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">☰</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">начало</a>
+                        <a href="explore.html">изследване</a>
+                        <a href="about.html">за нас</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="htext">
+            <!-- Заглавен текст и бутон -->
+            <h1 style="font-size: 50px"> Steller view </h1>
+            <p style="font-size: 20px;">Присъединете се към нас във вдъхновяващи космически пътешествия,
+                изследвайте мистериите на вселената,
+                и започнете вашето изследване на космоса.
+            </p>
+            <a href="explore.html"><button type="button">Започни</button></a>
+        </div>
+        <div class="galery  ">
+            <!-- Галерия с изображения, използваща fancybox -->
+            <a data-fancybox="gallery"
+                data-src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2F0dXJufGVufDB8fDB8fHww"
+                data-caption="<p>Пръстените на Сатурн, въпреки своята красота и стабилност, се състоят от множество <br>динамични частици, които постоянно се променят под влиянието на гравитационни взаимодействия.<p>">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2F0dXJufGVufDB8fDB8fHww" width="200" height="150" alt="" />
+            </a>
+            <a data-fancybox="gallery" data-src="https://cdn.mos.cms.futurecdn.net/D34wUPcMGzdj7tpiVbwaha-650-80.jpg.webp"
+                data-caption="<p>Космосът е безкрайно пространство, изпълнено със звезди, планети, галактики и мистерии, което продължава <br>да вълнува човечеството с неизведаните си тайни и невероятни явления.<p>">
+                <img src="https://cdn.mos.cms.futurecdn.net/D34wUPcMGzdj7tpiVbwaha-650-80.jpg.webp" width="200" height="150" alt="" />
+            </a>
+            <a data-fancybox="gallery" data-src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/31WhirlpoolGalaxy_1copy.jpg"
+                data-caption="<p>Галактиките, съставени от милиарди звезди те могат да <br>претърпяват взаимодействия и сливания, образувайки сложни структури в космоса.<p>">
+                <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/03/31WhirlpoolGalaxy_1copy.jpg" width="200" height="150" alt="" />
+            </a>
+        </div>
+    </div>
+
+    <hr style="color: white;">
+
+    <footer>
+        <!-- Информация в footer -->
+        <h3> Stellar View &reg;</h3>
+        <p>Информацията за тази страница се основава на космически изследвания и открития на НАСА.<br>
+            E-mail: stellarview@gamil.com
+        </p>
+    </footer>
+
+    <!-- Скрипт за fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            //
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+/* Оформление на фона */
+.background{
+    width :100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(imgs/space.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стилизация на навигационното меню */
+nav{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Стилизация на логото */
+.logo{
+    width:230px;
+    cursor:pointer;
+}
+
+/* Стилизация на бутоните в навигационното меню */
+nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/* Ефект на подчертаване при ховър върху бутоните в навигационното меню */
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #990099;
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Стилизация на текстовата част на страницата */
+.etext{
+    display:flex;
+    height: 88%;
+    align-items: center;
+    color:white;
+}
+
+/* Позициониране и стил на текста в текстовата част */
+.position{
+    flex-basis: 50%;
+    padding: 50px;
+}
+
+.etext h1{
+    font-size: 80px;
+}
+
+/* Стилизация на футъра */
+footer{
+    background-color: #282829;
+    color:white;
+    text-align: center;
+    padding-top:  10px;
+    padding-bottom: 10px;
+}
+
+/* Стилизация на галерийните елементи */
+.galery{
+    text-align: center;
+    padding-top:30%;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+/* Стилизация на текста в галерията */
+.htext{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    color:white;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+/* Стилизация на бутоните в галерията */
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight:  bold;
+    border: 2px solid white;
+    background:transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Стилизация на картите в галерията */
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Стилизация на картата с черна дупка в галерията */
+.black{
+    background-image: url(imgs/blackhole.jpeg); 
+}
+
+/* Стилизация на картата със Слънчевата система в галерията */
+.solar{
+    background-image: url(imgs/solarsystem_11zon.jpg);
+}
+
+/* Стилизация на картата с мъглявината в галерията */
+.pilar{
+    background-image: url(imgs/pilar.jpg);
+}
+
+/* Стилизация на картата с ракета в галерията */
+.rocket{
+    background-image: url(imgs/rocket_11zon.jpg);
+}
+
+/* Стилизация на контактите */
+.contacts {
+    text-align: center;
+    color: white;
+}
+
+/* Стилизация на блока с черна дупка */
+.bh{
+    background-color: #282829;
+    color:white;
+    width: 100%;
+    height: 100%;
+}
+
+/* Стилизация на изображението с черна дупка */
+.bhphoto{
+    width: 18vw;
+    height: auto;
+    float:right;
+    margin-left: 0.8%;
+    padding-right: 10px;
+}
+
+/* Стилизация на изображението със Слънчевата система */
+.sphoto{
+    height: auto; 
+    width:700px;   
+    display: block;  
+    padding-left: 25%; 
+    padding-top:10px;
+}
+
+/* Стилизация на текста в блока с черна дупка */
+.text{
+    padding-left: 10px;
+    font-size:  20px;
+    padding-top:50px;
+}
+
+/* Позициониране на галерийните елементи */
+.positionph{
+    padding-bottom: 20px;
+    padding-left: 25%;
+}
+
+/* Оформление на фона на друга страница */
+.backgroundn{
+    width :100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(imgs/space.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Стилизация на таблицата */
+table{
+    border-color: white;
+    float:right;
+}
+
+/* Стилизация на заглавията в таблицата */
+th{
+    color: black;
+    background-color: white;
+}
+
+/* Стилизация на падащото меню */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+/* Стилизация на елементите в падащото меню */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Отваряне на падащото меню при ховър */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.form{
+    border-radius: 10px;
+    margin-left: 40%;
+    width:300px;
+    height: 200px;
+    border-color: white;
+    border-style: solid;
+    color:white;
+    text-align: center;
+}
+
+/* Responsive стилове за екрани с ширина под 700px */
+@media only screen and (max-width: 700px){
+    .logo {
+        display: none;
+    } 
+    
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+      
+           
+    }
+
+    nav{
+        width:85%;
+       
+        margin:auto;
+        padding:45px 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .etext {
+        flex-direction: column;
+    }
+
+    .position {
+        flex-basis: 100%; 
+    }
+
+    #map-iframe {
+        width: 100%;
+        height: 60vh; 
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .phone{
+        text-align: center;
+    }
+
+    .sphoto{
+        padding-left: 10px;
+        max-width:100%;
+        height: auto; 
+        display: block;
+    }
+
+    bodys {
+        margin: 0; /* Премахване на стандартния отстъп на тялото */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Задаване на височината на тялото на цял екран */
+    }
+    .galery{
+        padding-top: 400px;
+    }
+}
+
+/* Responsive стилове за екрани с ширина под 1150px */
+@media only screen and (max-width: 1150px){
+    .sphoto{
+        padding-left:3%; 
+        max-width:100%;
+        height: auto; 
+        display: block;
+    }
+
+    bodys {
+        margin: 0; /* Премахване на стандартния отстъп на тялото */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Задаване на височината на тялото на цял екран */
+    }
+     .galery{
+        padding-top: 400px;
+    }
+}
